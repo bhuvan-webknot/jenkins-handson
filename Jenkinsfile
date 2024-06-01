@@ -5,6 +5,7 @@ pipeline {
         stage('Checkout'){
             steps {
                 git branch: 'master',
+                credentialsId: '4fd2c8fd-4db2-431a-aded-69080c947edf'
                 url: 'https://github.com/bhuvan-webknot/jenkins-handson/'
             }
         }
